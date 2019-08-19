@@ -1,8 +1,8 @@
 import React from "react";
+import { css, cx } from "emotion";
 
 const EpisodesCard = props => {
   const ep = props.ep;
-  console.log(ep);
   return (
     <div
       className={css`

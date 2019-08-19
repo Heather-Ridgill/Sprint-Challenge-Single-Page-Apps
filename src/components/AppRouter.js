@@ -1,12 +1,10 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import {
-  WelcomePage,
-  LocationsList,
-  CharacterList,
-  EpisodesList
-} from "./components";
+import WelcomePage from "./WelcomePage";
+import LocationsList from "./LocationsList";
+import CharacterList from "./CharacterList";
+import EpisodesList from "./EpisodesList";
 
 const AppRouter = () => {
   return (

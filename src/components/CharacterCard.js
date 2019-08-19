@@ -1,4 +1,5 @@
 import React from "react";
+import { css, cx } from "emotion";
 
 export default function CharacterCard(props) {
   const person = props.person;

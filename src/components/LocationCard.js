@@ -1,6 +1,7 @@
 import React from "react";
+import { css, cx } from "emotion";
 
-export default function LocationCard({ name, type, dimension, residents }) {
+export default function LocationCard(props) {
   const loc = props.loc;
   return (
     <div
