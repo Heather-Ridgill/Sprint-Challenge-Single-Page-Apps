@@ -5,20 +5,21 @@ import { css, cx } from "emotion";
 
 // TODO: Add missing tabs below
 export default function TabNav() {
-  const NavButton = `
+  const NavButton = css`
     padding: 15px 30px;
     text-decoration: none;
     color: black;
     border: 1px solid black;
     border-radius: 15px;
-    &:hover{
-        cursor: pointer;
-        color: white;
-        background: #777;
-    }`;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background: #777;
+    }
+  `;
   return (
     <nav
-      className={`
+      className={css`
         width: 100%;
         display: flex;
         justify-content: space-around;
