@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function LocationCard({ name, type, dimension, residents }) {
-  const loc = props.loc;
+const EpisodesCard = props => {
+  const ep = props.ep;
+  console.log(ep);
   return (
     <div
       className={css`
@@ -20,11 +21,13 @@ export default function LocationCard({ name, type, dimension, residents }) {
           text-align: center;
         `}
       >
-        {loc.name}
+        {ep.name}
       </h1>
-      <p>Type: {loc.type}</p>
-      <p>Dimension: {loc.dimension}</p>
-      <p>Number of residents: {loc.residents.length}</p>
+      <p>Episode: {ep.episode}</p>
+      <p>Aired: {ep.air_date}</p>
+      <p>Contains {ep.characters.length} characters</p>
     </div>
   );
-}
+};
+
+export default EpisodesCard;
