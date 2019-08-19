@@ -1,4 +1,4 @@
-# Sprint Challenge: Single Page Applications
+<!-- # Sprint Challenge: Single Page Applications
 ## Rick & Morty Edition
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Single Page Applications, React Router I - II, React Forms, and Hooks.
@@ -19,22 +19,22 @@ In case you ever need to return to old code. Remember your **ABC: Always Be Comm
 
 ## Description
 
-In this challenge, you will create a Single Page Application complete with Client-Side Routing. It must consume a 3rd party API service (based on the TV show [Rick and Morty](https://rickandmortyapi.com/documentation).)
+In this challenge, you will create a Single Page Application complete with Client-Side Routing. It must consume a 3rd party API service (based on the TV show [Rick and Morty](https://rickandmortyapi.com/documentation).) -->
 
 ## Self-Study/Essay Questions
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
+  > Answer:Client-side routing is a JavaScript managed routing option. It offers control over your site URL & content without necessarily having to wait for a server to respond with content. It is designed to mimic the appearance of traditional multi page websites.
 - [ ] What does AJAX stand for?
-> Answer:
+  > Answer:AJAX stands for: Asynchronous JavaScript and XML
 - [ ] What are `controlled components` in React?
-> Answer:
+  > Answer:A controlled component is an input element who's value is controlled by react instead of itself.
 - [ ] Name three tools/libraries for making AJAX requests.
-> Answer:
+  > Answer:Axios, Formik, Fetch
 
-## Project Set Up
+<!-- ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
@@ -172,5 +172,4 @@ Start with the most _familiar sounding_ stretch goal. Then _most fun_. After tha
 
 > **Note:** AFTER Sprint Challenge: [Solutions to many stretch goals](https://github.com/LambdaSchool/Sprint-Challenge-Single-Page-Apps-Solution/pulls) (and live demo URLs) are available from TLs (or GitHub admins.)
 
-There are many ways to implement each of these requirements!
-
+There are many ways to implement each of these requirements! -->
