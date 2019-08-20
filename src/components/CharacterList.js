@@ -3,15 +3,17 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import Header from "./Header.js";
 import TabNav from "./TabNav.js";
+// import { returnStatement } from "@babel/types";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
-  const { charList, setCharList } = useState([]);
+  const [charList, setCharList] = useState([]);
   useEffect(() => {
     axios
       .get("https://rickandmortyapi.com/api/character/")
       .then(response => {
-        setCharList(response.data);
+        setCharList(response.data.results);
+        console.log(response.data.results);
       })
       .catch(error => {
         console.error("server Error", error);
@@ -21,16 +23,30 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 
-  return (
-    <>
-      <Header />
-      <TabNav />
+  if (charList.length === false) {
+    return <div>Loading Characters</div>;
+  } else {
+    return (
+      <>
+        <Header />
+        <TabNav />
 
-      <section className="character-list grid-view">
-        {charList.map(char => {
-          return <CharacterCard char={char} key={char.id} />;
-        })}
-      </section>
-    </>
-  );
+        <section className="character-list grid-view">
+          {charList.map(character => (
+            <CharacterCard
+              key={character.id}
+              image={character.image}
+              name={character.name}
+              gender={character.gender}
+              species={character.species}
+              status={character.status}
+              location={character.location.name}
+              origin={character.origin.name}
+              // episodes={character.episode}
+            />
+          ))}
+        </section>
+      </>
+    );
+  }
 }

@@ -1,8 +1,16 @@
 import React from "react";
 import { css, cx } from "emotion";
 
-export default function CharacterCard(props) {
-  const person = props.person;
+export default function CharacterCard({
+  image,
+  name,
+  species,
+  gender,
+  status,
+  location,
+  origin,
+  episodes
+}) {
   return (
     <div
       className={css`
@@ -16,13 +24,13 @@ export default function CharacterCard(props) {
         width: 40%;
       `}
     >
-      <img src={person.image} />
+      <img src={image} />
       <h1
         className={css`
           text-align: center;
         `}
       >
-        {person.name}
+        {name}
       </h1>
       <div
         className={css`
@@ -31,12 +39,12 @@ export default function CharacterCard(props) {
           align-items: center;
         `}
       >
-        <p>Species: {person.species}</p>
-        <p>Status: {person.status}</p>
-        <p>Gender: {person.gender}</p>
-        <p>Location: {person.location.name}</p>
-        <p>Origin: {person.origin.name}</p>
-        <p>Appears in {person.episode.length} episodes</p>
+        <p>Species: {species}</p>
+        <p>Status: {status}</p>
+        <p>Gender: {gender}</p>
+        <p>Location: {location}</p>
+        <p>Origin: {origin}</p>
+        {/* <p>Appears in {episodes} episodes</p> */}
       </div>
     </div>
   );

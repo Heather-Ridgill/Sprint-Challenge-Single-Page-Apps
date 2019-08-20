@@ -9,12 +9,12 @@ export default function TabNav() {
     padding: 15px 30px;
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     &:hover {
       cursor: pointer;
       color: white;
-      background: #777;
+      background: #ee82ee;
     }
   `;
   return (
